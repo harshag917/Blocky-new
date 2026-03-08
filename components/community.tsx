@@ -65,10 +65,10 @@ export default function Community() {
           </StaggerItem>
         </StaggerChildren>
 
-        {/* New CoinGecko and CoinMarketCap sections */}
+        {/* Track Us On section */}
         <h3 className="text-center text-2xl md:text-3xl font-bold mb-8">Track Us On</h3>
 
-        <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <StaggerChildren className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           <StaggerItem>
             <CommunityCard
               icon={
@@ -111,6 +111,24 @@ export default function Community() {
               stats="Real-time data"
               buttonText="View Listing"
               buttonLink="https://coinmarketcap.com/"
+            />
+          </StaggerItem>
+
+          <StaggerItem delay={0.2}>
+            <CommunityCard
+              icon={
+                <svg className="h-8 w-8 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="2" y="2" width="20" height="20" rx="3" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M6 6h4v2H6zM6 10h6v2H6zM6 14h4v2H6z" fill="currentColor"/>
+                  <circle cx="17" cy="17" r="5" fill="#FBBF24"/>
+                  <path d="M15 17l1.5 1.5L19 15" stroke="#1a1a1a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+                </svg>
+              }
+              title="DexScreener"
+              description="Track BLOCKY's real-time price, liquidity, and on-chain trading activity on DexScreener"
+              stats="Live on-chain data"
+              buttonText="View Chart"
+              buttonLink="https://dexscreener.com/solana/6awvwe21stdebwgtmxytir6hnrtlj4hyfdanccdzko6r"
             />
           </StaggerItem>
         </StaggerChildren>

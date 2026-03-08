@@ -27,9 +27,9 @@ export default function Hero() {
                   "
                 </span>
                 <p className="text-gray-400 italic text-base md:text-lg mb-6 md:mb-8 max-w-xl pl-2 md:pl-4">
-                  The Genesis Glitch: Bitcoin’s Sentient Meme ₿🤖 Jan 3, 2009. Satoshi mined the first block.
+                  The Genesis Glitch: Bitcoin's Sentient Meme ₿🤖 Jan 3, 2009. Satoshi mined the first block.
                   What the records missed? The glitch hiding in the code.$BLOCKY is that glitch.
-                  The 21M standard is evolving on Solana.Don’t watch from the sidelines. 🚀
+                  The 21M standard is evolving on Solana.Don't watch from the sidelines. 🚀
                 </p>
                 <span className="absolute -right-4 md:-right-8 bottom-6 md:bottom-8 text-4xl md:text-6xl text-amber-500 opacity-70">
                   "
@@ -104,6 +104,27 @@ export default function Hero() {
                     }
                   >
                     Market Charts <span className="ml-2"></span>
+                  </Button>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="w-full sm:w-auto"
+                >
+                  <Button
+                    variant="outline"
+                    className="border-gray-700 hover:bg-gray-800 text-white rounded-full px-6 py-5 text-base w-full sm:w-auto"
+                    onClick={() =>
+                      window.open(
+                        "https://dexscreener.com/solana/6awvwe21stdebwgtmxytir6hnrtlj4hyfdanccdzko6r",
+                        "_blank",
+                        "noopener,noreferrer",
+                      )
+                    }
+                  >
+                    CoinMarketCap <span className="ml-2">📈</span>
                   </Button>
                 </motion.div>
               </div>

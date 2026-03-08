@@ -40,7 +40,7 @@ export default function Roadmap() {
                 status="completed"
                 items={[
                   "Token development and Smart Contract Audit",
-                  "CoinGecko and CoinMarketCap listings",
+                  "CoinGecko,Dex Screener and CoinMarketCap listings",
                   "Brand Launch and Identity Creation",
                   "Community building on Telegram and Discord",
                   "Initial marketing campaign",
