@@ -136,7 +136,8 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="grid grid-cols-2 gap-3 p-3 rounded-lg border border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-transparent max-w-[400px] mx-auto"
+              className="grid grid-cols-2 gap-4 p-4 rounded-lg border border-amber-500/20 bg-gradient-to-br from-amber-500/5 to-transparent max-w-[560px] mx-auto"
+
             >
               {[
                 { src: "/images/first.jpeg", alt: "BLOCKY Character 1", delay: 0.1 },
@@ -190,14 +191,14 @@ function CharacterCard({ src, alt, delay }: CharacterCardProps) {
         boxShadow: "0 0 20px rgba(245, 166, 35, 0.3)",
         transition: { duration: 0.2 },
       }}
-      className="relative aspect-square rounded-lg overflow-hidden border border-gray-800 bg-gray-900"
+      className="relative aspect-[3/4] rounded-lg overflow-hidden border border-gray-800 bg-gray-900"
     >
       <Image
         src={src || "/placeholder.svg"}
         alt={alt}
         fill
         className="object-cover object-center"
-        sizes="(max-width: 768px) 150px, 200px"
+        sizes="(max-width: 768px) 180px, 260px"
       />
     </motion.div>
   )
