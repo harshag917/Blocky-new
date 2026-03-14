@@ -126,7 +126,7 @@ export default function NFTs() {
               )}
               <div className="p-4">
                 <p className="font-bold text-white">{nft.name}</p>
-                <p className="text-amber-500 text-sm">{nft.price}</p>
+                
               </div>
             </motion.a>
           ))}
